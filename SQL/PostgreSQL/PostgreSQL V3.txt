@@ -1,0 +1,113 @@
+DROP DATABASE IF EXISTS maihardwarestoredb;
+CREATE DATABASE maihardwarestoredb;
+
+DROP TABLE IF EXISTS histories CASCADE;
+DROP TABLE IF EXISTS invoices CASCADE;
+DROP TABLE IF EXISTS sales CASCADE;
+DROP TABLE IF EXISTS cart_details CASCADE;
+DROP TABLE IF EXISTS temp_carts CASCADE;
+DROP TABLE IF EXISTS products CASCADE;
+DROP TABLE IF EXISTS users CASCADE;
+DROP TABLE IF EXISTS roles CASCADE;
+DROP TABLE IF EXISTS categories CASCADE;
+
+-- Tabla de roles
+CREATE TABLE roles (
+    id_role SERIAL PRIMARY KEY,
+    role_name VARCHAR(20) NOT NULL UNIQUE,
+    description VARCHAR(100)
+);
+
+-- Tabla de usuarios
+CREATE TABLE users (
+    id_user SERIAL PRIMARY KEY,
+    name VARCHAR(50) NOT NULL,
+    email VARCHAR(50) NOT NULL UNIQUE,
+    id_role INTEGER NOT NULL,
+    token_telegram VARCHAR(200),
+    status BOOLEAN DEFAULT TRUE,
+    created_at TIMESTAMP DEFAULT NOW(),
+    FOREIGN KEY (id_role) REFERENCES roles(id_role)
+);
+
+-- Tabla de categorías
+CREATE TABLE categories (
+    id_category SERIAL PRIMARY KEY,
+    category_name VARCHAR(50) NOT NULL UNIQUE,
+    description VARCHAR(200)
+);
+
+-- Tabla de productos
+CREATE TABLE products (
+    id_product SERIAL PRIMARY KEY,
+    name VARCHAR(40) NOT NULL,
+    reference VARCHAR(15) UNIQUE,
+    description TEXT NOT NULL,
+    price DECIMAL(10,2) NOT NULL,
+    stock INTEGER NOT NULL,
+    sizes VARCHAR(20),
+    id_category INTEGER,
+    created_at TIMESTAMP DEFAULT NOW(),
+    FOREIGN KEY (id_category) REFERENCES categories(id_category)
+);
+
+-- Carritos temporales
+CREATE TABLE temp_carts (
+    id_cart SERIAL PRIMARY KEY,
+    id_user INTEGER NOT NULL,
+    created_at TIMESTAMP DEFAULT NOW(),
+    FOREIGN KEY (id_user) REFERENCES users(id_user) ON DELETE CASCADE
+);
+
+-- Detalles del carrito (sin campo calculado)
+CREATE TABLE cart_details (
+    id_detail SERIAL PRIMARY KEY,
+    id_cart INTEGER NOT NULL,
+    id_product INTEGER NOT NULL,
+    quantity INTEGER NOT NULL CHECK (quantity > 0),
+    price DECIMAL(10,2) NOT NULL,
+    total DECIMAL(10,2) NOT NULL, -- Se calculará manualmente
+    FOREIGN KEY (id_cart) REFERENCES temp_carts(id_cart) ON DELETE CASCADE,
+    FOREIGN KEY (id_product) REFERENCES products(id_product)
+);
+
+-- Ventas
+CREATE TABLE sales (
+    id_sale SERIAL PRIMARY KEY,
+    id_user INTEGER NOT NULL,
+    created_at TIMESTAMP DEFAULT NOW(),
+    total DECIMAL(10,2),
+    type_sale VARCHAR(20) NOT NULL CHECK (type_sale IN ('contado', 'cotizado')),
+    status VARCHAR(20) DEFAULT 'pending',
+    FOREIGN KEY (id_user) REFERENCES users(id_user)
+);
+
+-- Facturas (detalle de venta)
+CREATE TABLE invoices (
+    id_invoice SERIAL PRIMARY KEY,
+    id sale INTEGER NOT NULL,
+    id_product INTEGER NOT NULL,
+    quantity INTEGER NOT NULL,
+    price DECIMAL(10,2) NOT NULL,
+    total DECIMAL(10,2) NOT NULL, -- Se calculará manualmente
+    FOREIGN KEY (id_sale) REFERENCES sales(id_sale) ON DELETE CASCADE,
+    FOREIGN KEY (id_product) REFERENCES products(id_product)
+);
+
+-- Historial de operaciones
+CREATE TABLE histories (
+    id_history SERIAL PRIMARY KEY,
+    id_user INTEGER NOT NULL,
+    created_at TIMESTAMP DEFAULT NOW(),
+    action_type VARCHAR(50) NOT NULL,
+    table_affected VARCHAR(50),
+    record_id INTEGER,
+    query TEXT,
+    query_results TEXT,
+    FOREIGN KEY (id_user) REFERENCES users(id_user)
+);
+
+-- Insertar roles básicos
+INSERT INTO roles (role_name, description) VALUES 
+('vendedor', 'Usuario con permisos de venta'),
+('admin', 'Usuario con permisos administrativos');

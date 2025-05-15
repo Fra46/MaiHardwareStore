@@ -1,0 +1,102 @@
+--DROP DATABASE IF EXISTS MaiHardware_StoreDB;
+--CREATE DATABASE MaiHardware_StoreDB;
+
+DROP TABLE IF EXISTS action_logs CASCADE;
+DROP TABLE IF EXISTS invoice_details CASCADE;
+DROP TABLE IF EXISTS quotations CASCADE;
+DROP TABLE IF EXISTS quotation_details CASCADE;
+DROP TABLE IF EXISTS products CASCADE;
+DROP TABLE IF EXISTS admins CASCADE;
+DROP TABLE IF EXISTS employees CASCADE;
+DROP TABLE IF EXISTS clients CASCADE;
+DROP TABLE IF EXISTS persons CASCADE;
+DROP TABLE IF EXISTS roles CASCADE;
+DROP TABLE IF EXISTS categories CASCADE;
+
+-- Tabla Persona (abstracta en C#, aquí como base)
+CREATE TABLE persona (
+    id SERIAL PRIMARY KEY,
+    nombre VARCHAR(100),
+    dni VARCHAR(20),
+    direccion TEXT,
+    telefono VARCHAR(20),
+    correo VARCHAR(100)
+);
+
+-- Cliente (hereda de persona)
+CREATE TABLE cliente (
+    id_cliente SERIAL PRIMARY KEY,
+    id_persona INT REFERENCES persona(id)
+);
+
+-- Empleado (hereda de persona)
+CREATE TABLE empleado (
+    id_empleado SERIAL PRIMARY KEY,
+    id_persona INT REFERENCES persona(id),
+    usuario VARCHAR(50),
+    contrasena TEXT
+);
+
+-- Administrador (hereda de persona)
+CREATE TABLE administrador (
+    id_admin SERIAL PRIMARY KEY,
+    id_persona INT REFERENCES persona(id),
+    usuario VARCHAR(50),
+    contrasena TEXT
+);
+
+-- Producto
+CREATE TABLE producto (
+    id SERIAL PRIMARY KEY,
+    codigo VARCHAR(50) UNIQUE,
+    nombre VARCHAR(100),
+    categoria VARCHAR(50),
+    precio_compra NUMERIC(10,2),
+    precio_venta NUMERIC(10,2),
+    stock INT,
+    activo BOOLEAN DEFAULT TRUE
+);
+
+-- Cotización
+CREATE TABLE cotizacion (
+    id SERIAL PRIMARY KEY,
+    id_cliente INT REFERENCES cliente(id_cliente),
+    fecha TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    total NUMERIC(10,2)
+);
+
+-- Detalle de cotización
+CREATE TABLE detalle_cotizacion (
+    id SERIAL PRIMARY KEY,
+    id_cotizacion INT REFERENCES cotizacion(id),
+    id_producto INT REFERENCES producto(id),
+    cantidad INT,
+    precio_unitario NUMERIC(10,2)
+);
+
+-- Venta
+CREATE TABLE venta (
+    id SERIAL PRIMARY KEY,
+    id_cliente INT REFERENCES cliente(id_cliente),
+    id_empleado INT REFERENCES empleado(id_empleado),
+    fecha TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    metodo_pago VARCHAR(50),
+    total NUMERIC(10,2)
+);
+
+-- Detalle de venta
+CREATE TABLE detalle_venta (
+    id SERIAL PRIMARY KEY,
+    id_venta INT REFERENCES venta(id),
+    id_producto INT REFERENCES producto(id),
+    cantidad INT,
+    precio_unitario NUMERIC(10,2)
+);
+
+-- Configuración general del sistema
+CREATE TABLE configuracion (
+    id SERIAL PRIMARY KEY,
+    nombre_tienda VARCHAR(100),
+    igv NUMERIC(4,2),
+    impresora_predeterminada VARCHAR(100)
+);
