@@ -1,0 +1,87 @@
+-- Elimina las tablas si existen (en orden para evitar conflictos de FK)
+DROP TABLE IF EXISTS config;
+DROP TABLE IF EXISTS sale_detail;
+DROP TABLE IF EXISTS sale;
+DROP TABLE IF EXISTS quotation_detail;
+DROP TABLE IF EXISTS quotation;
+DROP TABLE IF EXISTS product;
+DROP TABLE IF EXISTS clients;
+DROP TABLE IF EXISTS usuarios;
+
+-- Tabla de usuarios unificada
+CREATE TABLE usuarios (
+    id_usuario INT IDENTITY(1,1) PRIMARY KEY,
+    username NVARCHAR(20) NOT NULL UNIQUE,
+    password NVARCHAR(MAX) NOT NULL CHECK(LEN(password) >= 8),
+    tipo NVARCHAR(20) NOT NULL, -- 'admin', 'empleado', 'cliente'
+    first_name NVARCHAR(20) NOT NULL,
+    last_name NVARCHAR(30) NOT NULL,
+    phone_number NVARCHAR(20),
+    email NVARCHAR(100) NOT NULL,
+    post NVARCHAR(50),         -- Solo para admin
+    salary DECIMAL(10,2)       -- Solo para admin
+);
+
+-- Tabla de clientes
+CREATE TABLE clients (
+    id_client INT IDENTITY(1,1) PRIMARY KEY,
+    registration_date DATETIME DEFAULT GETDATE(),
+    status NVARCHAR(15),
+    id_usuario INT FOREIGN KEY REFERENCES usuarios(id_usuario)
+);
+
+-- Tabla de productos
+CREATE TABLE product (
+    id_product INT IDENTITY(1,1) PRIMARY KEY,
+    code NVARCHAR(15) UNIQUE,
+    name NVARCHAR(50) NOT NULL,
+    category NVARCHAR(15) NOT NULL,
+    description NVARCHAR(MAX),
+    sale_price DECIMAL(10,2) NOT NULL,
+    stock INT NOT NULL
+);
+
+-- Tabla de cotizaciones
+CREATE TABLE quotation (
+    id_quotation INT IDENTITY(1,1) PRIMARY KEY,
+    date DATETIME DEFAULT GETDATE(),
+    total DECIMAL(10,2) NOT NULL,
+    id_client INT FOREIGN KEY REFERENCES clients(id_client)
+);
+
+-- Detalle de cotizaciones
+CREATE TABLE quotation_detail (
+    id_quotation_detail INT IDENTITY(1,1) PRIMARY KEY,
+    quantity INT NOT NULL,
+    unit_price DECIMAL(10,2) NOT NULL,
+    id_quotation INT FOREIGN KEY REFERENCES quotation(id_quotation),
+    id_product INT FOREIGN KEY REFERENCES product(id_product)
+);
+
+-- Tabla de ventas
+CREATE TABLE sale (
+    id_sale INT IDENTITY(1,1) PRIMARY KEY,
+    date DATETIME DEFAULT GETDATE() NOT NULL,
+    payment_method NVARCHAR(50) NOT NULL,
+    total DECIMAL(10,2) NOT NULL,
+    id_client INT FOREIGN KEY REFERENCES clients(id_client),
+    id_usuario INT FOREIGN KEY REFERENCES usuarios(id_usuario) -- empleado/admin que realizó la venta
+);
+
+-- Detalle de ventas
+CREATE TABLE sale_detail (
+    id_sale_detail INT IDENTITY(1,1) PRIMARY KEY,
+    quantity INT NOT NULL,
+    unit_price DECIMAL(10,2) NOT NULL,
+    id_sale INT FOREIGN KEY REFERENCES sale(id_sale),
+    id_product INT FOREIGN KEY REFERENCES product(id_product)
+);
+
+-- Configuración de la tienda
+CREATE TABLE config (
+    id_config INT IDENTITY(1,1) PRIMARY KEY,
+    store_name NVARCHAR(30) NOT NULL DEFAULT 'MaiHardware Store',
+    igv DECIMAL(4,2) NOT NULL DEFAULT 0.18,
+    default_printer NVARCHAR(50)
+);
+
