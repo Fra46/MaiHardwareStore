@@ -1,0 +1,73 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\andre\\source\\repos\\MaiHardware-Store\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6E236A48-7A30-4AEC-A1CA-08E4FB4986AF}|Presentacion\\Presentacion.csproj|c:\\users\\andre\\source\\repos\\maihardware-store\\presentacion\\frmbot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6E236A48-7A30-4AEC-A1CA-08E4FB4986AF}|Presentacion\\Presentacion.csproj|solutionrelative:presentacion\\frmbot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E236A48-7A30-4AEC-A1CA-08E4FB4986AF}|Presentacion\\Presentacion.csproj|c:\\users\\andre\\source\\repos\\maihardware-store\\presentacion\\frmbot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E236A48-7A30-4AEC-A1CA-08E4FB4986AF}|Presentacion\\Presentacion.csproj|solutionrelative:presentacion\\frmbot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E236A48-7A30-4AEC-A1CA-08E4FB4986AF}|Presentacion\\Presentacion.csproj|C:\\Users\\andre\\source\\repos\\MaiHardware-Store\\presentacion\\telegrambotcontenido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E236A48-7A30-4AEC-A1CA-08E4FB4986AF}|Presentacion\\Presentacion.csproj|solutionrelative:presentacion\\telegrambotcontenido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TelegramBotContenido.cs",
+              "DocumentMoniker": "C:\\Users\\andre\\source\\repos\\MaiHardware-Store\\Presentacion\\TelegramBotContenido.cs",
+              "RelativeDocumentMoniker": "Presentacion\\TelegramBotContenido.cs",
+              "ToolTip": "C:\\Users\\andre\\source\\repos\\MaiHardware-Store\\Presentacion\\TelegramBotContenido.cs",
+              "RelativeToolTip": "Presentacion\\TelegramBotContenido.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAAwAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T09:17:39.035Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FrmBot.cs",
+              "DocumentMoniker": "C:\\Users\\andre\\source\\repos\\MaiHardware-Store\\Presentacion\\FrmBot.cs",
+              "RelativeDocumentMoniker": "Presentacion\\FrmBot.cs",
+              "ToolTip": "C:\\Users\\andre\\source\\repos\\MaiHardware-Store\\Presentacion\\FrmBot.cs",
+              "RelativeToolTip": "Presentacion\\FrmBot.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFYAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T07:58:46.456Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FrmBot.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\andre\\source\\repos\\MaiHardware-Store\\Presentacion\\FrmBot.cs",
+              "RelativeDocumentMoniker": "Presentacion\\FrmBot.cs",
+              "ToolTip": "C:\\Users\\andre\\source\\repos\\MaiHardware-Store\\Presentacion\\FrmBot.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Presentacion\\FrmBot.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T07:58:39.415Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
