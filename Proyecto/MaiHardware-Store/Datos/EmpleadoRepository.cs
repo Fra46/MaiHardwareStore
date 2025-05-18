@@ -135,5 +135,22 @@ namespace Datos
                 CerrarConexion();
             }
         }
+        public bool ExisteCorreo(string correo)
+        {
+            string sentencia = "SELECT COUNT(*) FROM users WHERE email = @correo";
+            SqlCommand cmd = new SqlCommand(sentencia, Connection);
+            cmd.Parameters.AddWithValue("@correo", correo);
+
+            try
+            {
+                AbrirConexion();
+                int count = (int)cmd.ExecuteScalar();
+                return count > 0;
+            }
+            finally
+            {
+                CerrarConexion();
+            }
+        }
     }
 }

@@ -86,3 +86,4 @@ C:\Users\andre\source\repos\MaiHardware-Store\Presentacion\obj\Debug\Presenta.BC
 C:\Users\andre\source\repos\MaiHardware-Store\Presentacion\obj\Debug\Presentacion.exe
 C:\Users\andre\source\repos\MaiHardware-Store\Presentacion\obj\Debug\Presentacion.pdb
 C:\Users\andre\source\repos\MaiHardware-Store\Presentacion\obj\Debug\Presentacion.FrmRecuperarContrasena.resources
+C:\Users\andre\source\repos\MaiHardware-Store\Presentacion\obj\Debug\Presentacion.FrmEmpleado.resources
