@@ -1,46 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\maira\\Downloads\\MaiHardware-Store\\",
+  "WorkspaceRootPath": "C:\\Users\\andre\\source\\repos\\MaiHardware-Store\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6E236A48-7A30-4AEC-A1CA-08E4FB4986AF}|Presentacion\\Presentacion.csproj|c:\\users\\maira\\downloads\\maihardware-store\\presentacion\\frmpaneldecontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{6E236A48-7A30-4AEC-A1CA-08E4FB4986AF}|Presentacion\\Presentacion.csproj|solutionrelative:presentacion\\frmpaneldecontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6E236A48-7A30-4AEC-A1CA-08E4FB4986AF}|Presentacion\\Presentacion.csproj|c:\\users\\maira\\downloads\\maihardware-store\\presentacion\\frmadministrador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6E236A48-7A30-4AEC-A1CA-08E4FB4986AF}|Presentacion\\Presentacion.csproj|solutionrelative:presentacion\\frmadministrador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6E236A48-7A30-4AEC-A1CA-08E4FB4986AF}|Presentacion\\Presentacion.csproj|c:\\users\\maira\\downloads\\maihardware-store\\presentacion\\frmadministrador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{6E236A48-7A30-4AEC-A1CA-08E4FB4986AF}|Presentacion\\Presentacion.csproj|solutionrelative:presentacion\\frmadministrador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6E236A48-7A30-4AEC-A1CA-08E4FB4986AF}|Presentacion\\Presentacion.csproj|c:\\users\\maira\\downloads\\maihardware-store\\presentacion\\frmpaneldecontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6E236A48-7A30-4AEC-A1CA-08E4FB4986AF}|Presentacion\\Presentacion.csproj|solutionrelative:presentacion\\frmpaneldecontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6E236A48-7A30-4AEC-A1CA-08E4FB4986AF}|Presentacion\\Presentacion.csproj|c:\\users\\maira\\downloads\\maihardware-store\\presentacion\\frmempleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{6E236A48-7A30-4AEC-A1CA-08E4FB4986AF}|Presentacion\\Presentacion.csproj|C:\\Users\\andre\\source\\repos\\MaiHardware-Store\\presentacion\\frmempleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{6E236A48-7A30-4AEC-A1CA-08E4FB4986AF}|Presentacion\\Presentacion.csproj|solutionrelative:presentacion\\frmempleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6E236A48-7A30-4AEC-A1CA-08E4FB4986AF}|Presentacion\\Presentacion.csproj|C:\\Users\\maira\\Downloads\\MaiHardware-Store\\presentacion\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{6E236A48-7A30-4AEC-A1CA-08E4FB4986AF}|Presentacion\\Presentacion.csproj|solutionrelative:presentacion\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6E236A48-7A30-4AEC-A1CA-08E4FB4986AF}|Presentacion\\Presentacion.csproj|C:\\Users\\maira\\Downloads\\MaiHardware-Store\\presentacion\\frmrecuperarcontrasena.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{6E236A48-7A30-4AEC-A1CA-08E4FB4986AF}|Presentacion\\Presentacion.csproj|c:\\users\\andre\\source\\repos\\maihardware-store\\presentacion\\frmrecuperarcontrasena.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{6E236A48-7A30-4AEC-A1CA-08E4FB4986AF}|Presentacion\\Presentacion.csproj|solutionrelative:presentacion\\frmrecuperarcontrasena.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{41339421-E314-4AFE-8BB1-F4F72EA8A43B}|Datos\\Datos.csproj|C:\\Users\\maira\\Downloads\\MaiHardware-Store\\datos\\basedatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{41339421-E314-4AFE-8BB1-F4F72EA8A43B}|Datos\\Datos.csproj|solutionrelative:datos\\basedatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6E236A48-7A30-4AEC-A1CA-08E4FB4986AF}|Presentacion\\Presentacion.csproj|c:\\users\\andre\\source\\repos\\maihardware-store\\presentacion\\frmadministrador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6E236A48-7A30-4AEC-A1CA-08E4FB4986AF}|Presentacion\\Presentacion.csproj|solutionrelative:presentacion\\frmadministrador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6E236A48-7A30-4AEC-A1CA-08E4FB4986AF}|Presentacion\\Presentacion.csproj|C:\\Users\\maira\\Downloads\\MaiHardware-Store\\presentacion\\frmrecuperarcontrasena.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6E236A48-7A30-4AEC-A1CA-08E4FB4986AF}|Presentacion\\Presentacion.csproj|solutionrelative:presentacion\\frmrecuperarcontrasena.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6E236A48-7A30-4AEC-A1CA-08E4FB4986AF}|Presentacion\\Presentacion.csproj|C:\\Users\\maira\\Downloads\\MaiHardware-Store\\presentacion\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6E236A48-7A30-4AEC-A1CA-08E4FB4986AF}|Presentacion\\Presentacion.csproj|solutionrelative:presentacion\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6E236A48-7A30-4AEC-A1CA-08E4FB4986AF}|Presentacion\\Presentacion.csproj|C:\\Users\\andre\\source\\repos\\MaiHardware-Store\\presentacion\\frmempleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E236A48-7A30-4AEC-A1CA-08E4FB4986AF}|Presentacion\\Presentacion.csproj|solutionrelative:presentacion\\frmempleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,131 +26,60 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "FrmPanelDeControl.cs",
-              "DocumentMoniker": "C:\\Users\\maira\\Downloads\\MaiHardware-Store\\Presentacion\\FrmPanelDeControl.cs",
-              "RelativeDocumentMoniker": "Presentacion\\FrmPanelDeControl.cs",
-              "ToolTip": "C:\\Users\\maira\\Downloads\\MaiHardware-Store\\Presentacion\\FrmPanelDeControl.cs",
-              "RelativeToolTip": "Presentacion\\FrmPanelDeControl.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAYwBIAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "FrmRecuperarContrasena.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\andre\\source\\repos\\MaiHardware-Store\\Presentacion\\FrmRecuperarContrasena.cs",
+              "RelativeDocumentMoniker": "Presentacion\\FrmRecuperarContrasena.cs",
+              "ToolTip": "C:\\Users\\andre\\source\\repos\\MaiHardware-Store\\Presentacion\\FrmRecuperarContrasena.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Presentacion\\FrmRecuperarContrasena.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-18T05:42:15.659Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-18T22:56:36.811Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "FrmAdministrador.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\maira\\Downloads\\MaiHardware-Store\\Presentacion\\FrmAdministrador.cs",
+              "DocumentMoniker": "C:\\Users\\andre\\source\\repos\\MaiHardware-Store\\Presentacion\\FrmAdministrador.cs",
               "RelativeDocumentMoniker": "Presentacion\\FrmAdministrador.cs",
-              "ToolTip": "C:\\Users\\maira\\Downloads\\MaiHardware-Store\\Presentacion\\FrmAdministrador.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\andre\\source\\repos\\MaiHardware-Store\\Presentacion\\FrmAdministrador.cs [Dise\u00F1o]",
               "RelativeToolTip": "Presentacion\\FrmAdministrador.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-18T05:27:12.322Z",
+              "WhenOpened": "2025-05-18T05:53:00.343Z",
               "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "FrmAdministrador.cs",
-              "DocumentMoniker": "C:\\Users\\maira\\Downloads\\MaiHardware-Store\\Presentacion\\FrmAdministrador.cs",
-              "RelativeDocumentMoniker": "Presentacion\\FrmAdministrador.cs",
-              "ToolTip": "C:\\Users\\maira\\Downloads\\MaiHardware-Store\\Presentacion\\FrmAdministrador.cs",
-              "RelativeToolTip": "Presentacion\\FrmAdministrador.cs",
-              "ViewState": "AgIAAEQAAAAAAAAAAAAmwAYAAAAYAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "FrmEmpleado.cs",
+              "DocumentMoniker": "C:\\Users\\andre\\source\\repos\\MaiHardware-Store\\Presentacion\\FrmEmpleado.cs",
+              "RelativeDocumentMoniker": "Presentacion\\FrmEmpleado.cs",
+              "ToolTip": "C:\\Users\\andre\\source\\repos\\MaiHardware-Store\\Presentacion\\FrmEmpleado.cs",
+              "RelativeToolTip": "Presentacion\\FrmEmpleado.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-18T05:25:36.818Z",
+              "WhenOpened": "2025-05-18T05:38:26.311Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "FrmPanelDeControl.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\maira\\Downloads\\MaiHardware-Store\\Presentacion\\FrmPanelDeControl.cs",
-              "RelativeDocumentMoniker": "Presentacion\\FrmPanelDeControl.cs",
-              "ToolTip": "C:\\Users\\maira\\Downloads\\MaiHardware-Store\\Presentacion\\FrmPanelDeControl.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Presentacion\\FrmPanelDeControl.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-18T05:16:18.59Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "FrmEmpleado.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\maira\\Downloads\\MaiHardware-Store\\Presentacion\\FrmEmpleado.cs",
+              "DocumentMoniker": "C:\\Users\\andre\\source\\repos\\MaiHardware-Store\\Presentacion\\FrmEmpleado.cs",
               "RelativeDocumentMoniker": "Presentacion\\FrmEmpleado.cs",
-              "ToolTip": "C:\\Users\\maira\\Downloads\\MaiHardware-Store\\Presentacion\\FrmEmpleado.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\andre\\source\\repos\\MaiHardware-Store\\Presentacion\\FrmEmpleado.cs [Dise\u00F1o]",
               "RelativeToolTip": "Presentacion\\FrmEmpleado.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-18T05:05:05.34Z",
+              "WhenOpened": "2025-05-18T05:35:56.955Z",
               "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "FrmRecuperarContrasena.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\maira\\Downloads\\MaiHardware-Store\\Presentacion\\FrmRecuperarContrasena.cs",
-              "RelativeDocumentMoniker": "Presentacion\\FrmRecuperarContrasena.cs",
-              "ToolTip": "C:\\Users\\maira\\Downloads\\MaiHardware-Store\\Presentacion\\FrmRecuperarContrasena.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Presentacion\\FrmRecuperarContrasena.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-17T19:30:51.603Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "FrmPrincipal.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\maira\\Downloads\\MaiHardware-Store\\Presentacion\\FrmPrincipal.cs",
-              "RelativeDocumentMoniker": "Presentacion\\FrmPrincipal.cs",
-              "ToolTip": "C:\\Users\\maira\\Downloads\\MaiHardware-Store\\Presentacion\\FrmPrincipal.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Presentacion\\FrmPrincipal.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-17T19:47:31.11Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "FrmRecuperarContrasena.cs",
-              "DocumentMoniker": "C:\\Users\\maira\\Downloads\\MaiHardware-Store\\Presentacion\\FrmRecuperarContrasena.cs",
-              "RelativeDocumentMoniker": "Presentacion\\FrmRecuperarContrasena.cs",
-              "ToolTip": "C:\\Users\\maira\\Downloads\\MaiHardware-Store\\Presentacion\\FrmRecuperarContrasena.cs",
-              "RelativeToolTip": "Presentacion\\FrmRecuperarContrasena.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-17T19:38:18.733Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "BaseDatos.cs",
-              "DocumentMoniker": "C:\\Users\\maira\\Downloads\\MaiHardware-Store\\Datos\\BaseDatos.cs",
-              "RelativeDocumentMoniker": "Datos\\BaseDatos.cs",
-              "ToolTip": "C:\\Users\\maira\\Downloads\\MaiHardware-Store\\Datos\\BaseDatos.cs",
-              "RelativeToolTip": "Datos\\BaseDatos.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAACgAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-18T05:00:50.006Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "FrmPrincipal.cs",
-              "DocumentMoniker": "C:\\Users\\maira\\Downloads\\MaiHardware-Store\\Presentacion\\FrmPrincipal.cs",
-              "RelativeDocumentMoniker": "Presentacion\\FrmPrincipal.cs",
-              "ToolTip": "C:\\Users\\maira\\Downloads\\MaiHardware-Store\\Presentacion\\FrmPrincipal.cs",
-              "RelativeToolTip": "Presentacion\\FrmPrincipal.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAgwDwAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-17T19:47:33.458Z",
-              "EditorCaption": ""
             }
           ]
         }
