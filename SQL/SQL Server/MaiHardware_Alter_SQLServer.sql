@@ -1,0 +1,8 @@
+-- 1. Agregar la columna id_user (ajusta el tipo de dato si es diferente en users)
+ALTER TABLE clients
+ADD id_user INT NULL;
+
+-- 2. Crear la clave foránea (ajusta el nombre de la tabla y columna si es necesario)
+ALTER TABLE clients
+ADD CONSTRAINT FK_clients_users
+FOREIGN KEY (id_user) REFERENCES users(id_user);
