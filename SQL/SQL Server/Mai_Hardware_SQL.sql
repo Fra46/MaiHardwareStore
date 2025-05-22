@@ -22,7 +22,7 @@ CREATE TABLE users (
     salary DECIMAL(10,2)       -- Solo para admin
 );
 
--- Tabla de clientes (sin usuario ni contraseña)
+-- Tabla de clientes (sin usuario ni contrasena)
 CREATE TABLE clients (
     id_client INT IDENTITY(1,1) PRIMARY KEY,
     first_name NVARCHAR(20) NOT NULL,
@@ -68,7 +68,7 @@ CREATE TABLE sale (
     payment_method NVARCHAR(50) NOT NULL,
     total DECIMAL(10,2) NOT NULL,
     id_client INT FOREIGN KEY REFERENCES clients(id_client),
-    id_user INT FOREIGN KEY REFERENCES users(id_user) -- empleado/admin que realizó la venta
+    id_user INT FOREIGN KEY REFERENCES users(id_user) -- empleado/admin que realizo la venta
 );
 
 -- Detalle de ventas
@@ -80,7 +80,7 @@ CREATE TABLE sale_detail (
     id_product INT FOREIGN KEY REFERENCES product(id_product)
 );
 
--- Configuración de la tienda
+-- Configuracion de la tienda
 CREATE TABLE config (
     id_config INT IDENTITY(1,1) PRIMARY KEY,
     store_name NVARCHAR(30) NOT NULL DEFAULT 'MaiHardware Store',
@@ -89,7 +89,7 @@ CREATE TABLE config (
 );
 
 -- =========================
--- ÍNDICES RECOMENDADOS
+-- INDICES RECOMENDADOS
 -- =========================
 CREATE INDEX idx_clients_email ON clients(email);
 CREATE INDEX idx_sale_id_client ON sale(id_client);
@@ -107,27 +107,27 @@ CREATE INDEX idx_sale_detail_id_product ON sale_detail(id_product);
 -- Usuarios: admin y empleado
 INSERT INTO users (username, password, tipo, first_name, last_name, phone_number, email, post, salary)
 VALUES 
-('admin', 'admin1234', 'admin', 'Juan', 'Pérez', '999888777', 'admin@correo.com', 'Gerente', 5000.00),
-('empleado1', 'emp12345', 'empleado', 'Ana', 'García', '988877766', 'empleado1@correo.com', NULL, NULL);
+('admin', 'admin1234', 'admin', 'Juan', 'Pï¿½rez', '999888777', 'admin@correo.com', 'Gerente', 5000.00),
+('empleado1', 'emp12345', 'empleado', 'Ana', 'Garcï¿½a', '988877766', 'empleado1@correo.com', NULL, NULL);
 
 -- Clientes
 INSERT INTO clients (first_name, last_name, phone_number, email, registration_date, status)
 VALUES 
-('Carlos', 'López', '977766655', 'cliente1@correo.com', GETDATE(), 'activo'),
-('María', 'Sánchez', '966655544', 'cliente2@correo.com', GETDATE(), 'activo');
+('Carlos', 'Lï¿½pez', '977766655', 'cliente1@correo.com', GETDATE(), 'activo'),
+('Marï¿½a', 'Sï¿½nchez', '966655544', 'cliente2@correo.com', GETDATE(), 'activo');
 
 -- Productos
 INSERT INTO product (code, name, category, description, sale_price, stock)
 VALUES 
 ('P001', 'Martillo', 'Herramientas', 'Martillo de acero', 25.50, 100),
 ('P002', 'Destornillador', 'Herramientas', 'Destornillador plano', 10.00, 200),
-('P003', 'Taladro', 'Eléctricos', 'Taladro eléctrico 500W', 120.00, 50);
+('P003', 'Taladro', 'Elï¿½ctricos', 'Taladro elï¿½ctrico 500W', 120.00, 50);
 
--- Cotización para cliente1
+-- Cotizaciï¿½n para cliente1
 INSERT INTO quotation (date, total, id_client)
 VALUES (GETDATE(), 55.50, 1);
 
--- Detalle de cotización
+-- Detalle de cotizaciï¿½n
 INSERT INTO quotation_detail (quantity, unit_price, id_quotation, id_product)
 VALUES 
 (2, 25.50, 1, 1), -- 2 Martillos
@@ -143,6 +143,6 @@ VALUES
 (1, 120.00, 1, 3), -- 1 Taladro
 (1, 25.50, 1, 1);  -- 1 Martillo
 
--- Configuración de la tienda
+-- Configuraciï¿½n de la tienda
 INSERT INTO config (store_name, igv, default_printer)
 VALUES ('MaiHardware Store', 0.18, 'HP-LaserJet-123');
